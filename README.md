@@ -86,4 +86,23 @@
   if  ：
   elif ：
   else ：
-# 第四章
+# 第四章 循环结构
+## 4.1 while 循环
+    一般格式：
+    while condition :
+        statement
+## 4.2 while中的else
+    whle condition ：
+        statement
+    else 
+## 4.3 while 无限循环
+    while i == 1 :
+        statement
+## 4.4 for 循环的一般格式
+    for variable in sequence :
+        statement
+## 4.5 for 中的range函数
+    rang() 函数含义如下：
+    range(start, stop, step)  其中，
+    step可选，如果没有待step参数，默认step = 1， range函数反馈的是一个列表，即为左闭右开区间。range(2, 5)为2,3,4
+    start可选，如果没有start，则start为1
