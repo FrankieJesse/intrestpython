@@ -106,3 +106,11 @@
     range(start, stop, step)  其中，
     step可选，如果没有待step参数，默认step = 1， range函数反馈的是一个列表，即为左闭右开区间。range(2, 5)为2,3,4
     start可选，如果没有start，则start为1
+## 4.6 其他语句
+### break语句
+    break语句会终止本层循环，且对于while else语句，会把else语句一并跳过
+### continue语句
+    强制回到循环最开始的部分，注意，循环变量会自动处理。
+### pass语句
+    空语句，无实际意义。
+
