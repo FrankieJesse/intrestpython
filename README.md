@@ -117,32 +117,32 @@
 # 第五章 Turtle 画图
 ## 5.2 画笔运动命令
 描绘海龟的命令有很多，可以分为三类：画笔运动命令；画笔控制命令；全局控制命令
-turtle.forward()   想当前画笔方向移动多少像素
-turtle.backward()  向当前画笔相反方向移动多少像素
-turtle.right()  顺时针旋转多少度
-turtle.left() 逆时针旋转多少度
-turtle.pendown() 画笔移动时，不提笔（如果画笔从（1,1）移动到(10,10)， 不提笔的话，在两个点之间会有线）
-turtle.goto(x, y)  将画笔移动到新坐标
-turtle.penup()  移动时，不会只图形
-turtle.speed(speed)  画笔绘制的速度，0到10，包含0和10
-turtle.circle() 画圆，半径为正，表示圆心在画笔左边，否则在右边
+    turtle.forward()   想当前画笔方向移动多少像素
+    turtle.backward()  向当前画笔相反方向移动多少像素
+    turtle.right()  顺时针旋转多少度
+    turtle.left() 逆时针旋转多少度
+    turtle.pendown() 画笔移动时，不提笔（如果画笔从（1,1）移动到(10,10)， 不提笔的话，在两个点之间会有线）
+    turtle.goto(x, y)  将画笔移动到新坐标
+    turtle.penup()  移动时，不会只图形
+    turtle.speed(speed)  画笔绘制的速度，0到10，包含0和10
+    turtle.circle() 画圆，半径为正，表示圆心在画笔左边，否则在右边
 ## 5.3 画笔控制命令
 画笔控制命令，即为设置画笔的颜色、宽度的命令。
-turtle.pencolor 设置画笔颜色
-turtle.pensize() 设置画笔宽度
-turtle.color(color1, color2) 设置画笔的pencolor和fillcolor
-turtle.filling() 设置画笔是否在填充状态
-turtle.begin_fill() 画笔准备开始填充图形---所谓填充，是指在turtle画的封闭的图形中，填上颜色。
-turtle.end_fill() 画笔填充完成
-turtle.hideturtle() 隐藏画笔的turtle形状
-turtle.showturtle() 显示画笔的turtle形状
+    turtle.pencolor 设置画笔颜色
+    turtle.pensize() 设置画笔宽度
+    turtle.color(color1, color2) 设置画笔的pencolor和fillcolor
+    turtle.filling() 设置画笔是否在填充状态
+    turtle.begin_fill() 画笔准备开始填充图形---所谓填充，是指在turtle画的封闭的图形中，填上颜色。
+    turtle.end_fill() 画笔填充完成
+    turtle.hideturtle() 隐藏画笔的turtle形状
+    turtle.showturtle() 显示画笔的turtle形状
 ## 5.4 全局控制命令
-turtle.screensize() 设置画布的宽（单位像素）、高、背景颜色
-turtle.setup() 设置画布的大小，还可以设置窗口左上角顶点的位置
-turtle.clear() 清空turtle窗口，但是turtle的位置和状态不会改变
-turtle.reset() 清空窗口，充值turtle状态为起始状态
-turtle.undo() 撤销上一个turtle动作
-turtle.isvisible() 返回当前turtle是否可见
-turtle.stamp() 复制当前图形
-turtle.write() 写文本
-turtle.shape() 设置乌龟的图形形状，取值："arrow" "turtle" "circle" "square" "triangle" "classic"
+    turtle.screensize() 设置画布的宽（单位像素）、高、背景颜色
+    turtle.setup() 设置画布的大小，还可以设置窗口左上角顶点的位置
+    turtle.clear() 清空turtle窗口，但是turtle的位置和状态不会改变
+    turtle.reset() 清空窗口，充值turtle状态为起始状态
+    turtle.undo() 撤销上一个turtle动作
+    turtle.isvisible() 返回当前turtle是否可见
+    turtle.stamp() 复制当前图形
+    turtle.write() 写文本
+    turtle.shape() 设置乌龟的图形形状，取值："arrow" "turtle" "circle" "square" "triangle" "classic"
