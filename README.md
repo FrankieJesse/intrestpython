@@ -137,3 +137,12 @@ turtle.end_fill() 画笔填充完成
 turtle.hideturtle() 隐藏画笔的turtle形状
 turtle.showturtle() 显示画笔的turtle形状
 ## 5.4 全局控制命令
+turtle.screensize() 设置画布的宽（单位像素）、高、背景颜色
+turtle.setup() 设置画布的大小，还可以设置窗口左上角顶点的位置
+turtle.clear() 清空turtle窗口，但是turtle的位置和状态不会改变
+turtle.reset() 清空窗口，充值turtle状态为起始状态
+turtle.undo() 撤销上一个turtle动作
+turtle.isvisible() 返回当前turtle是否可见
+turtle.stamp() 复制当前图形
+turtle.write() 写文本
+turtle.shape() 设置乌龟的图形形状，取值："arrow" "turtle" "circle" "square" "triangle" "classic"
