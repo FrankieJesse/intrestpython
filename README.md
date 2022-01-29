@@ -114,3 +114,26 @@
 ### pass语句
     空语句，无实际意义。
 
+# 第五章 Turtle 画图
+## 5.2 画笔运动命令
+描绘海龟的命令有很多，可以分为三类：画笔运动命令；画笔控制命令；全局控制命令
+turtle.forward()   想当前画笔方向移动多少像素
+turtle.backward()  向当前画笔相反方向移动多少像素
+turtle.right()  顺时针旋转多少度
+turtle.left() 逆时针旋转多少度
+turtle.pendown() 画笔移动时，不提笔（如果画笔从（1,1）移动到(10,10)， 不提笔的话，在两个点之间会有线）
+turtle.goto(x, y)  将画笔移动到新坐标
+turtle.penup()  移动时，不会只图形
+turtle.speed(speed)  画笔绘制的速度，0到10，包含0和10
+turtle.circle() 画圆，半径为正，表示圆心在画笔左边，否则在右边
+## 5.3 画笔控制命令
+画笔控制命令，即为设置画笔的颜色、宽度的命令。
+turtle.pencolor 设置画笔颜色
+turtle.pensize() 设置画笔宽度
+turtle.color(color1, color2) 设置画笔的pencolor和fillcolor
+turtle.filling() 设置画笔是否在填充状态
+turtle.begin_fill() 画笔准备开始填充图形---所谓填充，是指在turtle画的封闭的图形中，填上颜色。
+turtle.end_fill() 画笔填充完成
+turtle.hideturtle() 隐藏画笔的turtle形状
+turtle.showturtle() 显示画笔的turtle形状
+## 5.4 全局控制命令
