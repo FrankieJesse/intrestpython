@@ -146,3 +146,23 @@
     turtle.stamp() 复制当前图形
     turtle.write() 写文本
     turtle.shape() 设置乌龟的图形形状，取值："arrow" "turtle" "circle" "square" "triangle" "classic"
+# 第六章 Python特征数据类型
+## 6.1 列表的函数
+    len(list)
+    max(list)
+    min(list)
+    list(seq)---将元组转换为列表
+    id(list) 获取列表对象的内存地址
+## 6.2 列表的方法
+    list.copy() 返回一个新的列表
+    list.clear() 将list中元素清空，长度为0
+    list.sort() 列表元素按升序排序
+    list.sort(reverse = True) 列表元素按照降序排序
+    list.reverse() 反向列表中的元素
+    list.remove(obj) 删除某个元素，输入为list的某一个元素
+    list.pop(index) 移除列表中的一个元素（默认最后一个元素）， 并且返回该元素的值
+    list.insert(index, obj) 对obj插入到index的位置，原index后边的值向后移动
+    list.extend(seq) 在列表末尾一次性追加另一个序列中的多个值，扩展为新的列表
+    list.count(obj) 统计obj出现的次数
+    list.index(obj) obj第一次出现的index的值
+    
