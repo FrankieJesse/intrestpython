@@ -116,7 +116,7 @@
 
 # 第五章 Turtle 画图
 ## 5.2 画笔运动命令
-描绘海龟的命令有很多，可以分为三类：画笔运动命令；画笔控制命令；全局控制命令
+    描绘海龟的命令有很多，可以分为三类：画笔运动命令；画笔控制命令；全局控制命令
     turtle.forward()   想当前画笔方向移动多少像素
     turtle.backward()  向当前画笔相反方向移动多少像素
     turtle.right()  顺时针旋转多少度
@@ -127,7 +127,7 @@
     turtle.speed(speed)  画笔绘制的速度，0到10，包含0和10
     turtle.circle() 画圆，半径为正，表示圆心在画笔左边，否则在右边
 ## 5.3 画笔控制命令
-画笔控制命令，即为设置画笔的颜色、宽度的命令。
+    画笔控制命令，即为设置画笔的颜色、宽度的命令。
     turtle.pencolor 设置画笔颜色
     turtle.pensize() 设置画笔宽度
     turtle.color(color1, color2) 设置画笔的pencolor和fillcolor
