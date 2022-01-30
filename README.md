@@ -1,4 +1,5 @@
 # intrestpython
+## 参考文献：https://www.runoob.com/python/python-func-enumerate.html
 ## 第一章：python基础
 ### 1.1 python数据类型
   python基础数据类型有六种：数值，字符串，列表（数组），元组，集合，字典。
@@ -147,13 +148,19 @@
     turtle.write() 写文本
     turtle.shape() 设置乌龟的图形形状，取值："arrow" "turtle" "circle" "square" "triangle" "classic"
 # 第六章 Python特征数据类型
-## 6.1 列表的函数
+    enumerate函数：
+    enumerate() 函数用于将一个可遍历的数据对象(如列表、元组或字符串)组合为一个索引序列，同时列出数据和数据下标，一般用在 for 循环当中。
+    Python 2.3. 以上版本可用，2.6 添加 start 参数。
+## 6.1 列表
+    列表跟数组一个性质，列表中的元素可以是异构的。列表中的元素时可以被更改和删除的。列表也可以做合并操作，要通过函数来操作。
+    列表的访问有三种形式：list[1:3]即返回list[1],list[2]两个元素；list[3]直接访问第四个元素；for listItem in list。
+### 6.1.1 列表的函数
     len(list)
     max(list)
     min(list)
     list(seq)---将元组转换为列表
     id(list) 获取列表对象的内存地址
-## 6.2 列表的方法
+### 6.1.2 列表的方法
     list.copy() 返回一个新的列表
     list.clear() 将list中元素清空，长度为0
     list.sort() 列表元素按升序排序
@@ -165,4 +172,63 @@
     list.extend(seq) 在列表末尾一次性追加另一个序列中的多个值，扩展为新的列表
     list.count(obj) 统计obj出现的次数
     list.index(obj) obj第一次出现的index的值
-    
+## 6.2 元组
+    元组与列表相比，元组是不可更改的列表。即他是常量的元组。元组可以扩展，即不同的元组可以相加。
+    元组的访问与列表的访问是一致的。
+### 6.2.1 元组连接与删除
+    连接使用+，删除使用del，元组不存在删除单个元素的操作，因为元组是不可更改的。
+### 6.2.2 元组的函数
+    len(tuple)   元组元素的个数
+    max(tuple)   元组元素最大值
+    min(tuple)   元组元素最小值
+    tuple(seq)   将其他序列转换为元组
+### 6.2.3 元组的方法--待定，验证未通过。
+    tuple.count()   同len方法
+    tuple.index(tupleValue) 获取tupleValue在tuple中的位置。   
+## 6.3 字典
+    字典与列表比较相似，只不过把每个元素编程了健值对，即，健与值，其中，主键必须唯一。
+    字典的访问：
+    值的访问，可以通过下标来访问，也可以通过values()来访问。
+    健的访问，可以通过keys()来访问。
+    健值同时访问，可以通过items()来访问。
+### 6.3.1 字典元素的增删改查
+    增加：
+    dictionary['newKeys'] = 'newValues'
+    删除：
+    del dictionary['keys1']
+    修改：
+    dictionary['oldKeys'] = 'newValues'
+### 6.3.2 字典元素函数
+    1	cmp(dict1, dict2)
+    比较两个字典元素。
+    2	len(dict)
+    计算字典元素个数，即键的总数。
+    3	str(dict)
+    输出字典可打印的字符串表示。
+    4	type(variable)
+    返回输入的变量类型，如果变量是字典就返回字典类型。
+### 6.3.3 字典元素的方法
+    1	dict.clear()
+    删除字典内所有元素
+    2	dict.copy()
+    返回一个字典的浅复制
+    3	dict.fromkeys(seq[, val])
+    创建一个新字典，以序列 seq 中元素做字典的键，val 为字典所有键对应的初始值
+    4	dict.get(key, default=None)
+    返回指定键的值，如果值不在字典中返回default值
+    5	dict.has_key(key)
+    如果键在字典dict里返回true，否则返回false
+    6	dict.items()
+    以列表返回可遍历的(键, 值) 元组数组
+    7	dict.keys()
+    以列表返回一个字典所有的键
+    8	dict.setdefault(key, default=None)
+    和get()类似, 但如果键不存在于字典中，将会添加键并将值设为default
+    9	dict.update(dict2)
+    把字典dict2的键/值对更新到dict里
+    10	dict.values()
+    以列表返回字典中的所有值
+    11	pop(key[,default])
+    删除字典给定键 key 所对应的值，返回值为被删除的值。key值必须给出。 否则，返回default值。
+    12	popitem()
+    返回并删除字典中的最后一对键和值。
