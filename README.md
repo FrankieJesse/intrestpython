@@ -198,6 +198,8 @@
     del dictionary['keys1']
     修改：
     dictionary['oldKeys'] = 'newValues'
+    查：
+    dictionary['keys'] 或 dictionary.get('keys')
 ### 6.3.2 字典元素函数
     1	cmp(dict1, dict2)
     比较两个字典元素。
