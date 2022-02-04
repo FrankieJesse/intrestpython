@@ -257,10 +257,19 @@
     shuffle(lst) 将序列中的所有元素随机排序
 ### 7.2.3 三角函数
 
-### 7.3.4 字符串函数
+### 7.2.4 字符串函数
     capitalize() 将字符串的第一个字母改为大小字符
     center(width, fillchar) 返回一个指定的宽度width居中的字符串，fillchar为填充字符，默认为空格。原字符串居中显示，左右使用fillchar来填充，如果字符串的长度大于width，则即为原字符串
     count(str, begin, end) 返回str在begin到end之间出现的次数
     expandtabs(tablesize = 8) 将字符串中的tab键替换为空格，默认替换为8个空格
     find(str, begin = 0, end = len(string)) 在begin和end之间，找str出现的第一次的索引值
     
+### 7.3.2 自定义函数
+    在python中，数值、字符串、元组，是不可更改的，是值传递，如果这些类型通过函数参数传递，则传递的是值，函数内的更改，不会影响函数外的变量的值
+    在python中，列表，字典是可更改的，是可以改变的，是地址传递，如果这些类型作为参数传递，则传递的是地址，函数内的更改，是会影响函数外的变量的值。
+### 7.3.3 函数参数类型
+    函数的参数，分为必须参数、关键字参数和默认值参数。
+    函数的参数，个数必须与函数的定义完全一致。如果函数的参数个数不一致，则没有出现的参数，一定是默认值参数。
+    def Jesse(name, sex, address 'BaoAn', ID = 123)
+    则调用模式可以是：Jesse(name = 'Jesse', Sex = 'male') ， 后两个参数是使用默认值参数，如果没有指定name，和sex则其出现的顺序必须是先name，后sex
+    可变参数：Jesse(neccesaryPara, *varTuple) 第一个参数是必选参数，第二个参数，varTuple是一个元组，前边带了一个*表明他是一个可变参数
