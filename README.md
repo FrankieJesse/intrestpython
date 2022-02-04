@@ -234,3 +234,33 @@
     删除字典给定键 key 所对应的值，返回值为被删除的值。key值必须给出。 否则，返回default值。
     12	popitem()
     返回并删除字典中的最后一对键和值。
+# 第七章 python的函数
+## 7.2 内置函数
+### 7.2.1 数学函数
+    abs(x) 返回数字的绝对值
+    ceil(x) 返回上整数
+    floor(x) 返回下整数
+    round(x) 返回四舍五入数
+    exp(x) 返回e的x次幂
+    log10(x) 返回以10为基数，x的对数
+    pow(x, y) x的y次幂
+    sqrt(x) x开平方根
+    max(x1, x2, x3, ...) 取最大值
+    min(x1, x2, x3, ...) 取最小值
+### 7.2.2 随机数函数
+    choice(seq) 从序列中随机选择一个数字
+    sample(seq, n) 从序列中选择n个数字
+    randomint(a, b) 从[a, b]中随机选择一个int
+    randrange(start, stop, steps) stop为必选参数，从start到stop随机产生数字。start默认为1， steps默认为1
+    random() 随机生成一个实数，范围在[0, 1)
+    seed(x) 设置随机种子
+    shuffle(lst) 将序列中的所有元素随机排序
+### 7.2.3 三角函数
+
+### 7.3.4 字符串函数
+    capitalize() 将字符串的第一个字母改为大小字符
+    center(width, fillchar) 返回一个指定的宽度width居中的字符串，fillchar为填充字符，默认为空格。原字符串居中显示，左右使用fillchar来填充，如果字符串的长度大于width，则即为原字符串
+    count(str, begin, end) 返回str在begin到end之间出现的次数
+    expandtabs(tablesize = 8) 将字符串中的tab键替换为空格，默认替换为8个空格
+    find(str, begin = 0, end = len(string)) 在begin和end之间，找str出现的第一次的索引值
+    
